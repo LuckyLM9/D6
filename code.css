@@ -1,0 +1,83 @@
+img{
+    border-radius: 60px;
+}
+body {
+    margin-top: 120px;
+    background-color: rgb(250, 235, 235);
+}
+.container {
+    width: 1220px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.container .content-btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1s linear 0.2s;
+}
+
+.container:hover .content-btns {
+    opacity: 2; 
+}
+.container .content-btns #save-btn {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: red;
+    width: 350px;
+    height: 145px;
+    border-radius: 45px;
+    border: navajowhite;
+    position: absolute;
+    top: 0px;
+    right: 42px;
+    transition: top 1s linear 0.4s;
+}
+
+.container:hover .content-btns #save-btn {
+    top: 70px;
+}
+
+.container .content-btns .down-button {
+    font-size: 125px;
+    font-weight: 800;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 0px;
+    transition: bottom 1s linear 0.4s;
+}
+
+.container:hover .content-btns .down-button {
+    bottom: 170px; 
+}
+
+.container .content-btns #arrow-up-right {
+    width: 250px;
+    height: 50px;
+    left: 50px;
+}
+
+.container .content-btns #share {
+    width: 50px;
+    height: 60px;
+    left: 55px;
+}
+
+.container .content-btns #menu {
+    width: 50px;
+    height: 60px;
+    left: 400px;
+}
